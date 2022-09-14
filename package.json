@@ -1,0 +1,19 @@
+{
+  "name": "image-lambda",
+  "version": "1.0.0",
+  "description": "AWS Lambda allows writing code that is triggered in the cloud, without thinking about maintaining servers. We’ll use it today to automatically run some processing on image files after they’re uploaded to an S3 Bucket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marthaquinram/image-lambda.git"
+  },
+  "author": "Martha Quintanilla-Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marthaquinram/image-lambda/issues"
+  },
+  "homepage": "https://github.com/Marthaquinram/image-lambda#readme"
+}
