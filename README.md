@@ -3,7 +3,28 @@
 ## Lab 17 
 AWS Lambda allows writing code that is triggered in the cloud, without thinking about maintaining servers. We’ll use it today to automatically run some processing on image files after they’re uploaded to an S3 Bucket
 
-## Feature Tasks
+## Lab 18
+Create a single resource REST API using a domain model of your choosing, constructed using AWS Cloud Services
+
+- Database: DynamoDB
+  - 1 Table required
+- Routing: API Gateway
+  - POST
+/people - Given a JSON body, inserts a record into the database
+  - returns an object representing one record, by its id (##)
+- GET
+  - /people - returns an array of objects representing the records in the database
+  - /people/## - returns an object representing one record, by its id (##)
+- PUT
+  - /people/## - Given a JSON body and an ID (##), updates a record in the database
+  - returns an object representing one record, by its id (##)
+- DELETE
+  - /people/## - Given an id (##) removes the matching record from the database
+  - returns an empty object
+
+- CRUD Operation Handlers: Lambda Functions
+
+## Feature Tasks Lab 17
 
 - Create an S3 Bucket with “open” read permissions, so that anyone can see the images/files in their browser
 - A user should be able to upload an image at any size, and update a dictionary of all images that have been uploaded so far
@@ -16,9 +37,13 @@ AWS Lambda allows writing code that is triggered in the cloud, without thinking 
     - Note: If the image is a duplicate name, update the object in the array, don’t just add it
 - Upload the images.json file back to the S3 bucket
 
+
+
 # PR
 
 - <https://github.com/Marthaquinram/image-lambda/pull/1>
+- <https://github.com/Marthaquinram/image-lambda/pull/3>
+
 
 # UML 
 
