@@ -20,6 +20,10 @@ AWS Lambda allows writing code that is triggered in the cloud, without thinking 
 
 - <https://github.com/Marthaquinram/image-lambda/pull/1>
 
+# UML 
+
+![UML](./Lab18UML.png)
+
 # Documentation
 - for my lambda, I created an S3 bucket to upload photos to, and then it triggers the lambda function that was created via lambda.
 - Lambda fires off the function that creates a an image json file if theres none that exists.
